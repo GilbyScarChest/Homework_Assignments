@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- CSS Stylesheet -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <title>Bootstrap Visualization Dashboard</title>
+        
+    </head>
+    <body>
+        
+        <!-- Navigation -->
+        <nav class="navbar navbar-custom fixed-top navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">Lattitude</a>
+            
+            <!-- List Items -->
+            <ul class="nav justify-content-end my-auto">
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Plots</a>
+                    <!-- PLOTS - Dropdown Menu Content -->
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="Max_Temp.html">Max Temerature</a>
+                        <a class="dropdown-item" href="Max_Humidity.html">Humidity</a>
+                        <a class="dropdown-item" href="Cloudiness.html">Cloudiness</a>
+                        <a class="dropdown-item" href="Wind_Speed.html">Wind Speed</a>
+                    </div>
+                </li>    
+                    <!-- END DROPDOWN -->
+                <li class="nav-item"><a class="nav-link" href="Comparison.html">Comparison</a></li>
+                <li class="nav-item"><a class="nav-link" href="Data.html">Data</a></li>
+            </ul>
+        </nav>
+        
+        
+        
+        
+        <!-- Main Content -->
+        <div class="container col-12">
+            <div class="row">
+                
+                <!-- Summary -->
+                <div class="region col-md-7">
+                    <div class="summary">
+                        <h1 class="text-center">Humidity</h1>
+                        <div id="Lat_1">
+                            <img class="card-img" src="Images/Lat_v_Hum.png">
+                            <p>
+                                Est quid occaecat, ne aute minim veniam incididunt de aut cupidatat 
+                                exquisitaque, ea consequat eu litteris. Enim consectetur ingeniis veniam iudicem 
+                                non deserunt adipisicing a officia. Nulla id litteris ad irure expetendis 
+                                excepteur eu de fore illustriora, ut dolor officia comprehenderit ne ut malis 
+                                aliquip hic commodo aute noster expetendis sint ne non an 
+                            </p>
+                        </div><!-- END CARD -->
+                    </div><!-- END SUMMARY -->
+                </div><!-- END col--md-7 -->
+                
+                
+                <!-- Visualizations -->
+                <div class="region col-md-5">
+                    <div class="visualizations">
+                        <h1 class="text-center">Visualizations</h1>
+                        <div class="container">
+                            <div class="row">
+                                <a class="box col-xs-3 col-sm-6" id="LatTemp" href="Max_Temp.html"><img src="Images/Lat_v_Temp.png"></a>
+                                <a class="box col-xs-3 col-sm-6" id="LatHum" href="Max_Humidity.html"><img src="Images/Lat_v_Hum.png"></a>
+        
+                                <a class="box col-xs-3 col-sm-6" id="LatCloud" href="Cloudiness.html"><img src="Images/Lat_v_Cloud.png"></a>
+                                <a class="box col-xs-3 col-sm-6" id="LatWind" href="Wind_Speed.html"><img src="Images/Lat_v_Wind.png"></a>
+                            </div><!-- END ROW -->
+                        </div><!-- END CONTAINER Images -->
+                    </div><!-- END VISUALIZATIONS -->
+                </div><!-- END col-md-5 -->
+            </div><!-- END ROW -->
+        </div><!-- END CONTAINER Main Content-->
+        
+        <div class="col-md-12 separator">
+        </div>
+        
+        
+        
+        <!-- Footer -->
+        <footer class="col-md-12">
+            <div class="text-center py-4 copyright">
+                &copy; 2019 TylerGilbert
+            </div>
+        </footer>
+        
+        
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
